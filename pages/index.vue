@@ -3,8 +3,8 @@
     <NavBar class="header"></NavBar>
     <Images class="images"></Images>
     <Intro></Intro>
+    <Map style="height: 800px;background: #35495e"></Map>
     <Custom></Custom>
-    <Map style="height: 300px"></Map>
 
     <div>
     </div>

@@ -2,7 +2,7 @@
   <div>
     <div class="images">
       <el-carousel
-        height="450px"
+        height="600px"
         arrow="never"
       >
         <el-carousel-item v-for="item in 4" :key="item">
@@ -26,11 +26,6 @@
 </script>
 
 <style>
-
-  .images {
-
-  }
-
   .el-carousel__item {
     background-color: #d3dce6;
   }

@@ -48,8 +48,5 @@
     top: 0;
     z-index: 99999;
   }
-  .el-menu.el-menu--horizontal{
-
-  }
 
 </style>
