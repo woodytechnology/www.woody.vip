@@ -1,0 +1,24 @@
+{
+  "name": "woody_index_vue",
+  "version": "1.0.0",
+  "description": "My amazing Nuxt.js project",
+  "author": "Kaive Young",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "echarts": "^4.8.0",
+    "echarts-gl": "^1.1.1",
+    "element-ui": "^2.4.11",
+    "nuxt": "^2.0.0",
+    "vue-echarts": "^5.0.0-beta.0",
+    "vue-property-decorator": "^8.4.2"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.6.0"
+  }
+}
