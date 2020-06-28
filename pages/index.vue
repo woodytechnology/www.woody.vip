@@ -3,11 +3,10 @@
     <NavBar class="header"></NavBar>
     <Images class="images"></Images>
     <Intro></Intro>
+    <Case></Case>
+
     <Map style="height: 800px;background: #35495e"></Map>
     <Custom></Custom>
-
-    <div>
-    </div>
 
   </div>
 </template>
@@ -23,7 +22,11 @@ import Intro from '@/components/Intro.vue';
 //@ts-ignore
 import Custom from '@/components/Custom.vue';
 //@ts-ignore
-import Map from '@/components/Map.vue';
+import Map from '@/components/Map1.vue';
+
+//@ts-ignore
+import Case from '@/components/Case.vue';
+
 
 export default Vue.extend({
   components: {
@@ -31,7 +34,8 @@ export default Vue.extend({
     Images,
     Intro,
     Custom,
-    Map
+    Map,
+    Case
   }
 })
 </script>

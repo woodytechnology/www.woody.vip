@@ -4,6 +4,10 @@ export default {
   /*
   ** Headers of the page
   */
+  server: {
+    port: 3000, // default: 3000
+    host: '0.0.0.0' // default: localhost
+  },
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -30,8 +34,7 @@ export default {
   */
   plugins: [
     '@/plugins/element-ui',
-    '@/plugins/echarts'
-
+    '@/plugins/echarts',
   ],
   /*
   ** Nuxt.js dev-modules
@@ -43,6 +46,7 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios'
   ],
   /*
   ** Build configuration
