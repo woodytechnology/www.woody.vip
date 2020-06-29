@@ -5,14 +5,16 @@
       mode="horizontal"
       @select="handleSelect"
       text-color="#fff"
-      active-text-color="#ffd04b"
+      active-text-color="#fff"
       style="border-bottom: unset;"
     >
-      <el-menu-item disabled style="width: 100%"><Logo/></el-menu-item>
-      <el-menu-item index="1">处理中心</el-menu-item>
-      <el-menu-item index="2">处理中心</el-menu-item>
-      <el-menu-item index="3">消息中心</el-menu-item>
-      <el-menu-item index="4">订单管理</el-menu-item>
+      <el-menu-item  index="top" style="width: 100%;opacity:unset">
+        <img height="80%" src="~/assets/woody.png">
+      </el-menu-item>
+      <el-menu-item index="intro">公司简介</el-menu-item>
+      <el-menu-item index="app">应用场景</el-menu-item>
+      <el-menu-item index="map">客户分布</el-menu-item>
+      <el-menu-item index="footer">联系我们</el-menu-item>
       <el-menu-item disabled style="width: 100%"></el-menu-item>
 
     </el-menu>
@@ -31,8 +33,15 @@
   })
   export default class extends Vue {
     handleSelect(e:any){
-      console.log(e)
+      var element=document.querySelector("#"+e)
+      if(element!==null){
+        element.scrollIntoView(true);
+        window.scrollBy({
+          top: -60,
+        });
+      }
     }
+
   }
 </script>
 
@@ -51,11 +60,18 @@
   .el-menu{
     background: #04091c;
   }
+  .el-menu-item{
+    font-size:20px;
+  }
   .el-menu-item:hover {
     background-color: #04091c !important;
   }
   .el-menu-item.is-active {
     background-color: #04091c !important;
+    border-bottom:unset;
   }
+  .el-menu--horizontal>.el-menu-item.is-active{
+    border-bottom:unset;
 
+  }
 </style>

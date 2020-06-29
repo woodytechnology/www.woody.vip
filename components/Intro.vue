@@ -8,7 +8,7 @@
           </div>
           <el-row>
             <el-col :span="12">
-              <img height="200px" src="~/assets/ciyun.png" alt="Woody Box">
+              <img width="200px" src="~/assets/ciyun.png" alt="Woody Box">
             </el-col>
             <el-col :span="12">
               <div class="text item">
@@ -35,7 +35,9 @@
           </div>
         <el-row>
           <el-col :span="12" class="intro-image">
-            <vue-clock :number="number" :dial="dial" :border="border" :needle="needle" style="width: 160px"/>
+            <client-only>
+              <vue-clock :number="number" :dial="dial" :border="border" :needle="needle" style="width: 160px"/>
+              </client-only>
           </el-col>
           <el-col :span="12">
             <div class="text item">
@@ -116,11 +118,9 @@
 </template>
 
 <script>
-  import {vueClock} from 'vue-clock-lonlyape'
 
   export default {
     components:{
-      vueClock
     },
     data(){
       return {

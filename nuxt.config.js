@@ -35,6 +35,10 @@ export default {
   plugins: [
     '@/plugins/element-ui',
     '@/plugins/echarts',
+    '@/plugins/v-clock',
+    { src:'@/plugins/v-particles',mode: 'client' }, // only on client side
+
+    { src: '@/plugins/vue-seamless-scroll.js', mode: 'client' }, // only on client side
   ],
   /*
   ** Nuxt.js dev-modules
