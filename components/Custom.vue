@@ -1,24 +1,22 @@
 <template>
-  <div style="width:100%;">
-    <el-carousel :interval="4000" type="card" height="200px">
-      <el-carousel-item v-for="item in 6" :key="item">
-        <h3 class="medium">{{ item }}</h3>
-      </el-carousel-item>
-    </el-carousel>
+  <div>
+    <infinite-slide-bar duration="50s" delay="2s" :barStyle="{ padding: '5px 0' }">
+      <img v-for="(item, index) in [1,3,4,5,6,7,8]" height="80%" src="~/assets/iotbox.png" alt="Woody Box">
+    </infinite-slide-bar>
   </div>
+
 </template>
 
-<script lang="ts">
-  import { Component, Vue, Watch } from 'vue-property-decorator'
-  @Component({
-    name: 'Custom',
-    components: {
-    }
-  })
-  export default class extends Vue {
+<script>
+  import InfiniteSlideBar from 'vue-infinite-slide-bar'
 
+  export default {
+    components:{
+      InfiniteSlideBar
+    }
   }
 </script>
+
 
 <style>
   .box-card {

@@ -1,23 +1,38 @@
 <template>
-  <div>
-    <div class="images">
-      <el-carousel
-        height="600px"
-        arrow="never"
-      >
-        <el-carousel-item v-for="item in 4" :key="item">
+ <div class="images" style="color: white">
+   <el-carousel
+     height="600px"
+     arrow="never"
+   >
+     <el-carousel-item>
+       <BoxShow></BoxShow>
+     </el-carousel-item>
+     <el-carousel-item>
+       <CloudShow></CloudShow>
+     </el-carousel-item>
+     <el-carousel-item>
+       <AppShow></AppShow>
+     </el-carousel-item>
+   </el-carousel>
+ </div>
 
-        </el-carousel-item>
-      </el-carousel>
-    </div>
-  </div>
 </template>
 
 <script lang="ts">
   import { Component, Vue, Watch } from 'vue-property-decorator'
+  //@ts-ignore
+  import BoxShow from "@/components/WoodyBoxShow.vue";
+  //@ts-ignore
+  import CloudShow from "@/components/WoodyCloudShow.vue";
+  //@ts-ignore
+  import AppShow from "@/components/AppShow.vue";
+
   @Component({
     name: 'Images',
     components: {
+      BoxShow,
+      AppShow,
+      CloudShow
     }
   })
   export default class extends Vue {
@@ -26,8 +41,5 @@
 </script>
 
 <style>
-  .el-carousel__item {
-    background-color: #d3dce6;
-  }
 
 </style>

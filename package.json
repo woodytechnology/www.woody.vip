@@ -16,7 +16,9 @@
     "echarts-gl": "^1.1.1",
     "element-ui": "^2.4.11",
     "nuxt": "^2.0.0",
+    "vue-clock-lonlyape": "^1.2.1",
     "vue-echarts": "^5.0.0-beta.0",
+    "vue-infinite-slide-bar": "^1.1.1",
     "vue-property-decorator": "^8.4.2"
   },
   "devDependencies": {

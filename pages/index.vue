@@ -1,12 +1,22 @@
 <template>
   <div class="container">
-    <NavBar class="header"></NavBar>
-    <Images class="images"></Images>
-    <Intro></Intro>
-    <Case></Case>
+      <NavBar class="header"></NavBar>
+    <Part class="image">
+        <Images ></Images>
+      </Part>
 
-    <Map style="height: 800px;background: #35495e"></Map>
-    <Custom></Custom>
+    <Part style="background: white">
+      <Intro></Intro>
+    </Part>
+    <Part style="background: white">
+      <Case></Case>
+    </Part>
+    <Part style="background: #404a59">
+      <Map style="height: 800px;"></Map>
+    </Part>
+    <Part style="background: white">
+      <Custom></Custom>
+    </Part>
 
   </div>
 </template>
@@ -22,12 +32,13 @@ import Intro from '@/components/Intro.vue';
 //@ts-ignore
 import Custom from '@/components/Custom.vue';
 //@ts-ignore
-import Map from '@/components/Map1.vue';
+import Map from '@/components/Map.vue';
 
 //@ts-ignore
 import Case from '@/components/Case.vue';
 
-
+//@ts-ignore
+import Part from '@/components/part.vue';
 export default Vue.extend({
   components: {
     NavBar,
@@ -35,13 +46,20 @@ export default Vue.extend({
     Intro,
     Custom,
     Map,
-    Case
+    Case,
+    Part
   }
 })
 </script>
 
 <style>
-.header {
-  height: 60px;
-}
+  .header {
+    height: 60px;
+  }
+  .image{
+    background:url('~assets/backgroud.jpeg');
+    background-position:center;
+    background-size: 100%;
+
+  }
 </style>
