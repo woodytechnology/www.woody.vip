@@ -15,10 +15,11 @@
     "echarts": "^4.8.0",
     "echarts-gl": "^1.1.1",
     "element-ui": "^2.4.11",
+    "node-sass": "^4.14.1",
     "nuxt": "^2.0.0",
+    "sass-loader": "^8.0.2",
     "vue-clock-lonlyape": "^1.2.1",
     "vue-echarts": "^5.0.0-beta.0",
-    "vue-infinite-slide-bar": "^1.1.1",
     "vue-particles": "^1.0.9",
     "vue-property-decorator": "^8.4.2",
     "vue-seamless-scroll": "^1.1.21"

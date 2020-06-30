@@ -17,7 +17,7 @@
     <Part style="background: #404a59">
       <Map style="height: 800px;"></Map>
     </Part>
-    <Part id="custom" style="background: white">
+    <Part id="custom" style="background: white;height: 200px">
       <Custom></Custom>
     </Part>
 

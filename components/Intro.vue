@@ -66,12 +66,12 @@
             <el-col :span="12" class="intro-image">
               <img height="200px" src="~/assets/dianluban.png" alt="Woody Box">
             </el-col>
-            <el-col :span="12">
+            <el-col :span="12" class="text-col">
               <div class="text item">
-                网络安全
+                多年的软硬件技术积累
               </div>
               <div class="text item">
-                服务器运维
+
               </div>
               <div class="text item">
                 工业控制
@@ -87,24 +87,24 @@
       <el-col :md="12" :sm="24">
         <el-card class="box-card">
           <div slot="header" class="clearfix">
-            <h2>专业的机床改造</h2>
+            <h2>专业的数据采集</h2>
           </div>
           <el-row>
             <el-col :span="12" class="intro-image">
-              <img height="200px" src="~/assets/dianluban.png" alt="Woody Box">
+              <img height="180px" src="~/assets/iot.png" alt="Woody Box">
             </el-col>
-            <el-col :span="12">
+            <el-col :span="12" class="text-col">
               <div class="text item">
-                网络安全
+                上百种设备适配
               </div>
               <div class="text item">
-                服务器运维
+                十几种云平台对接
               </div>
               <div class="text item">
-                工业控制
+                万备的边缘计算功能
               </div>
               <div class="text item">
-                嵌入式研发
+                低功耗,低成本,接口丰富,操作简单
               </div>
             </el-col>
 
@@ -178,5 +178,8 @@
     justify-content: center;
     align-content: center;
     align-items: center;
+  }
+  .text-col{
+    line-height: 40px
   }
 </style>
