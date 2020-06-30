@@ -11,6 +11,9 @@
     <Part id="intro" style="background: white">
       <Intro></Intro>
     </Part>
+    <Part id="protocol" style="background: #404a59;padding-top:50px;color: white ">
+      <Protocol></Protocol>
+    </Part>
     <Part id="app" style="background: white">
       <Case></Case>
     </Part>
@@ -37,6 +40,7 @@ import Map from '@/components/Map.vue';
 import Case from '@/components/Case.vue';
 import Part from '@/components/part.vue';
 import Footer from '@/components/footer.vue';
+import Protocol from "@/components/Protocol";
 export default {
   components:{
     NavBar,
@@ -46,7 +50,8 @@ export default {
     Map,
     Case,
     Part,
-    Footer
+    Footer,
+    Protocol
   },
   data() {
     return {

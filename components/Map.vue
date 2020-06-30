@@ -39,33 +39,19 @@
           animationEasing: 'cubicInOut',
           animationDurationUpdate: 1000,
           animationEasingUpdate: 'cubicInOut',
-          title: [{
-            subtext: '客户分布',
-            left: 400,
-            top: 65,
+          title:  {
+            show:true,
+            text: '客户分布',
+            x:'center',
+            y: 100,
+            textAlign: null,
             textStyle: {
-              color: '#fff',
-              fontSize: 40
-            }
-          }, {
-            id: 'statistic',
-            right: 120,
-            top: 40,
-            width: 100,
-            textStyle: {
-              color: '#fff',
-              fontSize: 16
-            }
-          }],
-          toolbox: {
-            iconStyle: {
-              normal: {
-                borderColor: '#fff'
-              },
-              emphasis: {
-                borderColor: '#b1e4ff'
-              }
-            }
+              fontSize: 30,
+              fontStyle: 'normal',
+              color:"#FFF",
+            },
+            zlevel: 0,
+            z: 6,
           },
           geo: {
             map: 'china',
@@ -114,48 +100,11 @@
             width: '30%'
           },
           xAxis: {
-            type: 'value',
-            scale: false,
-            position: 'top',
-            boundaryGap: false,
-            splitLine: {
-              show: false
-            },
-            axisLine: {
-              show: false
-            },
-            axisTick: {
-              show: false
-            },
-            axisLabel: {
-              show: false,
-              margin: 2,
-              textStyle: {
-                color: '#aaa'
-              }
-            },
           },
           yAxis: {
             type: 'category',
-            nameGap: 16,
             axisLine: {
               show: false,
-              lineStyle: {
-                color: '#ddd'
-              }
-            },
-            axisTick: {
-              show: false,
-              lineStyle: {
-                color: '#ddd'
-              }
-            },
-            axisLabel: {
-              show: false,
-              interval: 0,
-              textStyle: {
-                color: '#ddd'
-              }
             },
             data: []
           },

@@ -5,8 +5,8 @@
         <div style="line-height: 40px;">
           <h3>联系我们</h3>
           <p>联系地址: 宁夏回族自治区银川市金凤区 宁安南街iBi育成中心一期1号楼1409</p>
-          <p>电子邮箱: contact_us@woody.vip</p>
-          <p>电话号码: +86 951 660 4924</p>
+          <p>电子邮箱: <a href="mailto:contact_us@woody.vip" style="color: inherit">contact_us@woody.vip</a></p>
+          <p>联系电话: <a href="tel:+86 951 660 4924" style="color: inherit">+86 951 660 4924</a></p>
         </div>
       </el-col>
       <el-col :span="12" style="display: flex;justify-content: center">
@@ -15,7 +15,7 @@
     </el-row>
     <div style="display: flex;justify-content: center;width: 100%;flex-direction:column;align-items:center;margin-top: 20px; ">
       <div>© Copyright 2020 宁夏巫迪科技有限公司.</div>
-      <div><a href="http://www.miitbeian.gov.cn/">宁ICP备17001886号-1</a></div>
+      <div><a href="http://beian.miit.gov.cn"  target="_blank" style="color: inherit">宁ICP备17001886号-1</a></div>
     </div>
   </div>
 </template>

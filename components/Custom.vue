@@ -87,8 +87,8 @@
       float: left;
       width: 300px;
       height: 160px;
-      margin: 10px 0 10px 10px;
-      line-height: 124px;
+      margin: 5px 0 5px 5px;
+      line-height: 160px;
       background-color: white;
       font-family: "Amaranth", sans-serif;
       font-size: 82px;

@@ -8,13 +8,17 @@
       active-text-color="#fff"
       style="border-bottom: unset;"
     >
-      <el-menu-item  index="top" style="width: 100%;opacity:unset">
-        <img height="80%" src="~/assets/woody.png">
+      <el-menu-item disabled style="width: 100%"></el-menu-item>
+      <el-menu-item  index="top" style="opacity:unset;">
+        <img height="80%" src="~/assets/woody.png" style="float:right ">
       </el-menu-item>
       <el-menu-item index="intro">公司简介</el-menu-item>
+      <el-menu-item index="protocol">支持协议</el-menu-item>
       <el-menu-item index="app">应用场景</el-menu-item>
       <el-menu-item index="map">客户分布</el-menu-item>
       <el-menu-item index="footer">联系我们</el-menu-item>
+      <el-menu-item index="doc"><a href="https://doc.iotbox.woody.vip" target="_blank"><i class="el-icon-link"></i>网关文档</a></el-menu-item>
+
       <el-menu-item disabled style="width: 100%"></el-menu-item>
 
     </el-menu>
@@ -72,6 +76,9 @@
   }
   .el-menu--horizontal>.el-menu-item.is-active{
     border-bottom:unset;
-
   }
+  a{text-decoration: none;}
+  a:visited{text-decoration: none;}
+  a:hover {text-decoration: none;}
+  a:active{text-decoration:none;}
 </style>
