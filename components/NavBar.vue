@@ -8,19 +8,15 @@
       active-text-color="#fff"
       style="border-bottom: unset;"
     >
-      <el-menu-item disabled style="width: 100%"></el-menu-item>
-      <el-menu-item  index="top" style="opacity:unset;">
-        <img height="80%" src="~/assets/woody.png" style="float:right ">
+      <el-menu-item index="top" style="opacity:unset;width: 100%">
+        <img height="80%" src="~/assets/woody.png">
       </el-menu-item>
       <el-menu-item index="intro">公司简介</el-menu-item>
       <el-menu-item index="protocol">支持协议</el-menu-item>
       <el-menu-item index="app">应用场景</el-menu-item>
       <el-menu-item index="map">客户分布</el-menu-item>
       <el-menu-item index="footer">联系我们</el-menu-item>
-      <el-menu-item index="doc"><a href="https://doc.iotbox.woody.vip" target="_blank"><i class="el-icon-link"></i>网关文档</a></el-menu-item>
-
-      <el-menu-item disabled style="width: 100%"></el-menu-item>
-
+      <el-menu-item index="doc" style="float: right"><a href="https://doc.iotbox.woody.vip" target="_blank"><i class="el-icon-link"></i>网关文档</a></el-menu-item>
     </el-menu>
   </div>
 </template>
@@ -56,10 +52,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 99999;
   }
   .el-menu{
     background: #04091c;

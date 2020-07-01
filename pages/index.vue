@@ -1,6 +1,8 @@
 <template>
   <div class="container">
-      <NavBar class="header"></NavBar>
+    <Part class="nav-header">
+      <NavBar></NavBar>
+    </Part>
     <client-only>
       <vue-particles color="#dedede"  style="background: #04091c;height: 600px" >
       </vue-particles>
@@ -73,7 +75,12 @@ export default {
 </script>
 
 <style>
-  .header {
+  .nav-header{
     height: 60px;
+    background: #04091c;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
   }
 </style>
