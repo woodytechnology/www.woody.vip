@@ -4,7 +4,7 @@
       <NavBar></NavBar>
     </Part>
     <client-only>
-      <vue-particles color="#dedede"  style="background: #04091c;height: 600px;position:absolute;top:60px" >
+      <vue-particles color="#dedede"  style="background: #04091c;width:100%;height: 600px;position:absolute;top:60px;" >
       </vue-particles>
     </client-only>
     <Part id="top" style="margin-top: 60px">
