@@ -5,7 +5,7 @@
         <div style="line-height: 40px;">
           <h3>联系我们</h3>
           <p>联系地址: 宁夏回族自治区银川市金凤区 宁安南街iBi育成中心一期1号楼1409</p>
-          <p>电子邮箱: <a href="mailto:contact_us@woody.vip" style="color: inherit">contact_us@woody.vip</a></p>
+          <p>电子邮箱: <a target="_blank" href="mailto:contact_us@woody.vip" style="color: inherit">contact_us@woody.vip</a></p>
           <p>联系电话: <a href="tel:+86 951 660 4924" style="color: inherit">+86 (0)951 660 4924</a></p>
         </div>
       </el-col>

@@ -1,10 +1,10 @@
 <template>
   <div style="width:100%;">
     <h1 style="text-align: center;" >支持的协议</h1>
-    <div v-for="(p_list,group,index) in protocols" v-key="index" style="margin: 0 20px 0 20px">
+    <div v-for="(p_list,group,index) in protocols" :key="group" style="margin: 0 20px 0 20px">
       <el-divider content-position="left" >{{group}}</el-divider>
       <el-row>
-        <el-col :lg="3" :md="4" :sm="6" :xs="8" v-for="(protocol,index2) in p_list" v-key="index2">
+        <el-col :lg="3" :md="4" :sm="6" :xs="8" v-for="(protocol,index2) in p_list" :key="index2">
           <div style="height: 100px;width: 150px; display: flex;align-items: center;justify-content: center;">
             <img style="max-width: 80%; max-height: 60%;" :src="protocol.img" :alt="protocol.name" :title="protocol.name_zh">
           </div>
@@ -52,7 +52,7 @@
         {
           name:'Brother',
           img: require("~/assets/protocols/brother.svg"),
-          name_zh:'发那科'
+          name_zh:'兄弟'
         },
         {
           name:'Heidenhain',
