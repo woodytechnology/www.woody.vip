@@ -10,8 +10,8 @@
         </div>
 
       </el-col>
-      <el-col :span="12" class="show_item" >
-        <img height="80%" src="~/assets/iotbox.png" alt="Woody Box">
+      <el-col :span="12" class="show_item">
+        <img class="show-img" height="60%" src="~/assets/iotbox.png" alt="Woody Box">
       </el-col>
     </el-row>
 
@@ -30,7 +30,11 @@
   }
 </script>
 
-<style>
+<style lang="scss" scoped>
+  .show-img {
+    box-reflect:below 10px linear-gradient(transparent 60%,rgba(0,0,0,.3));
+    -webkit-box-reflect:below 10px -webkit-linear-gradient(transparent 60%,rgba(0,0,0,.3));
+  }
   .show {
     display: flex;
     justify-content: center; /* 水平居中 */
