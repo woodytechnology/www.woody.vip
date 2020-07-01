@@ -57,6 +57,18 @@
           img: require("~/assets/protocols/mazak.svg")
         },
         {
+          name:'DMG',
+          img: require("~/assets/protocols/dmg.svg")
+        },
+        {
+          name:'Mori',
+          img: require("~/assets/protocols/mori.svg")
+        },
+        {
+          name:'Fagor',
+          img: require("~/assets/protocols/fagor.svg")
+        },
+        {
           name:'KND',
           img: require("~/assets/protocols/knd.png")
         },
@@ -86,6 +98,15 @@
           name:'Omron',
           img: require("~/assets/protocols/omron.svg")
         },
+        {
+          name: 'Schneider',
+          img: require("~/assets/protocols/schneider.svg")
+        },
+        {
+          name:'台达',
+          img: require("~/assets/protocols/delta.png")
+        },
+
       ],
       Robot:[
         {
@@ -95,6 +116,10 @@
         {
           name:'Fanuc',
           img: require("~/assets/protocols/fanuc.svg")
+        },
+        {
+          name:'ABB',
+          img: require("~/assets/protocols/abb.svg")
         },
       ],
     }
