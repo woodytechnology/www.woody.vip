@@ -8,7 +8,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "nuxt generate && ssh wuyun.pro 'sudo rm -rf /srv/index3' && scp -r dist wuyun.pro:/srv/index3"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
