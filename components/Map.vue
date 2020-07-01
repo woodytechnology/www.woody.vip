@@ -100,6 +100,11 @@
             width: '30%'
           },
           xAxis: {
+            type: 'category',
+            axisLine: {
+              show: false,
+            },
+            data: []
           },
           yAxis: {
             type: 'category',
