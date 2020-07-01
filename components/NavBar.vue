@@ -9,7 +9,7 @@
       style="border-bottom: unset;"
     >
       <el-menu-item index="top" style="opacity:unset;width: 100%">
-        <img height="80%" src="~/assets/woody.png">
+        <img height="80%" src="~/assets/woody.png" alt="logo">
       </el-menu-item>
       <el-menu-item index="intro">公司简介</el-menu-item>
       <el-menu-item index="protocol">支持协议</el-menu-item>
@@ -24,21 +24,19 @@
 <script lang="ts">
   import { Component, Vue, Watch } from 'vue-property-decorator'
   //@ts-ignore
-  import Logo from '@/components/Logo'
   @Component({
     name: 'NavBar',
     components: {
-      Logo
     }
   })
   export default class extends Vue {
     handleSelect(e:any){
-      var element=document.querySelector("#"+e)
+      var element=document.getElementById(e)
       if(element!==null){
-        element.scrollIntoView(true);
-        window.scrollBy({
-          top: -60,
-        });
+        window.scroll({
+          top:element.offsetTop-60,
+          behavior: 'smooth'
+        })
       }
     }
 
@@ -58,6 +56,7 @@
   }
   .el-menu-item{
     font-size:18px;
+    transition:unset;
   }
   .el-menu-item:hover {
     background-color: #04091c !important;
