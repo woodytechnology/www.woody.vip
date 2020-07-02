@@ -4,7 +4,7 @@
       <NavBar></NavBar>
     </Part>
     <client-only>
-      <vue-particles color="#dedede"  style="background: #04091c;width:100%;height: 600px;position:absolute;top:60px;" >
+      <vue-particles color="#dedede"  class="vue-particles" :style="{'height': 600 +'px'}" >
       </vue-particles>
     </client-only>
     <Part id="top" style="margin-top: 60px">
@@ -26,14 +26,14 @@
       <Custom></Custom>
     </Part>
 
-    <Part id="footer" style="background: #04091c; height: 400px;padding-top:50px;color: white ">
+    <Part id="footer" style="background: #04091c; padding-top:50px;color: white ">
       <Footer></Footer>
     </Part>
 
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import NavBar from '@/components/NavBar.vue';
 import Images from '@/components/Images.vue';
 import Intro from '@/components/Intro.vue';
@@ -42,9 +42,13 @@ import Map from '@/components/Map.vue';
 import Case from '@/components/Case.vue';
 import Part from '@/components/part.vue';
 import Footer from '@/components/footer.vue';
-import Protocol from "@/components/Protocol";
-export default {
-  components:{
+import Protocol from "@/components/Protocol.vue";
+
+
+
+import { Component, Vue, Watch } from 'vue-property-decorator'
+@Component({
+  components: {
     NavBar,
     Images,
     Intro,
@@ -54,13 +58,12 @@ export default {
     Part,
     Footer,
     Protocol
-  },
-  data() {
-    return {
-      geoCoordMap: [],
-      custom: []
-    }
-  },
+  }
+})
+export default class extends Vue {
+  geoCoordMap = []
+  custom = []
+  
   head(){
     return {
       title: '巫迪科技',
@@ -74,11 +77,35 @@ export default {
 </script>
 
 <style>
+  .vue-particles {
+    background: #04091c;
+    width:100%;
+    position:absolute;
+    top:60px;
+  }
   .nav-header{
     background: #04091c;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 99999;
+  }
+
+  .show-img {
+    box-reflect:below 5px linear-gradient(transparent 60%,rgba(0,0,0,.3));
+    -webkit-box-reflect:below 5px -webkit-linear-gradient(transparent 60%,rgba(0,0,0,.3));
+  }
+  /*.show {*/
+  /*  display: flex;*/
+  /*  justify-content: center; !* 水平居中 *!*/
+  /*  align-self: center;*/
+  /*  align-items: center;*/
+  /*}*/
+  .show_item {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-self: center;
+    align-items: center;
+    height: 100%;
   }
 </style>

@@ -1,8 +1,8 @@
 <template>
   <div style="width:100%;height: 100%">
 
-    <el-row class="show" style="width:100%;height: 100%">
-      <el-col :span="12" class="show_item">
+    <el-row style="width:100%;height: 100%">
+      <el-col :span="12" :xs="24" class="show_item">
         <div  style='line-height: 60px;'>
           <h1>巫迪工业网关</h1>
           <h3>工业新基建的重要组成部分</h3>
@@ -10,7 +10,7 @@
         </div>
 
       </el-col>
-      <el-col :span="12" class="show_item">
+      <el-col :span="12" :xs="24" class="show_item">
         <img class="show-img" height="60%" src="~/assets/iotbox.png" alt="Woody Box">
       </el-col>
     </el-row>
@@ -30,22 +30,5 @@
   }
 </script>
 
-<style lang="scss" scoped>
-  .show-img {
-    box-reflect:below 10px linear-gradient(transparent 60%,rgba(0,0,0,.3));
-    -webkit-box-reflect:below 10px -webkit-linear-gradient(transparent 60%,rgba(0,0,0,.3));
-  }
-  .show {
-    display: flex;
-    justify-content: center; /* 水平居中 */
-    align-self: center;
-    align-items: center;
-  }
-  .show_item {
-    display: flex;
-    justify-content: center; /* 水平居中 */
-    align-self: center;
-    align-items: center;
-    height: 100%;
-  }
+<style>
 </style>

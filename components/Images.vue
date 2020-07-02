@@ -20,11 +20,8 @@
 
 <script lang="ts">
   import { Component, Vue, Watch } from 'vue-property-decorator'
-  //@ts-ignore
   import BoxShow from "@/components/WoodyBoxShow.vue";
-  //@ts-ignore
   import CloudShow from "@/components/WoodyCloudShow.vue";
-  //@ts-ignore
   import AppShow from "@/components/AppShow.vue";
 
   @Component({
