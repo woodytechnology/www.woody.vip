@@ -8,7 +8,7 @@
       active-text-color="#fff"
       style="border-bottom: unset;"
     >
-      <el-menu-item index="top" style="opacity:unset;width: 100%">
+      <el-menu-item index="top">
         <img height="80%" src="~/assets/woody.png" alt="logo">
       </el-menu-item>
       <el-menu-item index="intro">公司简介</el-menu-item>
@@ -31,10 +31,16 @@
   })
   export default class extends Vue {
     handleSelect(e:any){
+      var nav=document.getElementById('nav')
+      var offset=0
+      if(nav!==null){
+        offset=nav.clientHeight
+      }
+
       var element=document.getElementById(e)
       if(element!==null){
         window.scroll({
-          top:element.offsetTop-60,
+          top:element.offsetTop-offset,
           behavior: 'smooth'
         })
       }
@@ -47,25 +53,26 @@
 
 
   .navbar {
-    display: flex;
-    justify-content: center;
     align-items: center;
   }
   .el-menu{
-    background: #04091c;
+    background: inherit;
   }
   .el-menu-item{
     font-size:18px;
     transition:unset;
+    border-bottom: unset;
   }
   .el-menu-item:hover {
-    background-color: #04091c !important;
+    background-color: inherit !important;
   }
   .el-menu-item.is-active {
-    background-color: #04091c !important;
-    border-bottom:unset;
+    background-color: inherit !important;
   }
   .el-menu--horizontal>.el-menu-item.is-active{
+    border-bottom:unset;
+  }
+  .el-menu--horizontal>.el-menu-item{
     border-bottom:unset;
   }
   a{text-decoration: none;}

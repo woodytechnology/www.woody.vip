@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Part class="nav-header">
+    <Part id="nav" class="nav-header">
       <NavBar></NavBar>
     </Part>
     <client-only>
@@ -67,7 +67,6 @@ export default {
       meta: [
         { hid: 'company', name: 'company', content: '宁夏巫迪科技有限公司' },
         { hid: 'description', name: 'description', content: 'CNC/PLC数据采集,专注于工业物联网,致力于开拓工业新基建' }
-
       ]
     }
   }
@@ -76,7 +75,6 @@ export default {
 
 <style>
   .nav-header{
-    height: 60px;
     background: #04091c;
     position: fixed;
     width: 100%;
