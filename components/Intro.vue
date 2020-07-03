@@ -1,7 +1,7 @@
 <template>
   <div style="width:100%; height: 100%">
     <el-row>
-      <el-col :md="12" :sm="24">
+      <el-col :span="12">
         <el-card class="box-card">
           <div slot="header" class="clearfix">
             <h2>拥有全栈的技术团队</h2>
@@ -20,7 +20,7 @@
           </el-row>
         </el-card>
       </el-col>
-      <el-col :md="12" :sm="24">
+      <el-col :span="12">
       <el-card class="box-card">
           <div slot="header" class="clearfix">
             <h2>快速迭代开发实时服务响应</h2>
@@ -41,7 +41,7 @@
         </el-row>
         </el-card>
       </el-col>
-      <el-col :md="12" :sm="24">
+      <el-col :span="12">
         <el-card class="box-card">
           <div slot="header" class="clearfix">
             <h2>定制软硬件开发</h2>
@@ -59,7 +59,7 @@
           </el-row>
         </el-card>
       </el-col>
-      <el-col :md="12" :sm="24">
+      <el-col :span="12">
         <el-card class="box-card">
           <div slot="header" class="clearfix">
             <h2>专业的数据采集</h2>

@@ -6,7 +6,10 @@
         <div  style='line-height: 60px;'>
           <h1>巫迪工业网关</h1>
           <h3>工业新基建的重要组成部分</h3>
-          <p>兼容90%以上的CNC设备,上百种PLC协议,可远程维护控制,边缘计算</p>
+          <div style="line-height:20px">
+            <p>兼容90%以上的CNC设备,上百种PLC协议</p>
+            <p>可远程维护控制,边缘计算</p>
+          </div>
         </div>
 
       </el-col>
