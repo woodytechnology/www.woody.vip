@@ -1,22 +1,23 @@
-# woody_index_vue
+# 巫迪科技主页
 
-> My amazing Nuxt.js project
+> CNC/PLC数据采集,专注于工业物联网,致力于开拓工业新基建"
 
-## Build Setup
+## 构建方法
 
 ```bash
-# install dependencies
+# 安装依赖
 $ yarn install
 
-# serve with hot reload at localhost:3000
+# 开启调试模式
 $ yarn dev
 
-# build for production and launch server
+# 狗建项目并运行nuxt服务器
 $ yarn build
 $ yarn start
 
-# generate static project
+# 生成静态文件
 $ yarn generate
-```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+# 部署项目
+$ yarn depoly
+```

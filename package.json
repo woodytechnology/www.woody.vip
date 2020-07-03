@@ -1,8 +1,8 @@
 {
-  "name": "woody_index_vue",
+  "name": "WoodyTechnology",
   "version": "1.0.0",
-  "description": "My amazing Nuxt.js project",
-  "author": "Kaive Young",
+  "description": "CNC/PLC数据采集,专注于工业物联网,致力于开拓工业新基建",
+  "author": "Woody Technology",
   "private": true,
   "scripts": {
     "dev": "nuxt",
