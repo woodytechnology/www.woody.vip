@@ -17,6 +17,9 @@
 /*  box-sizing: border-box;*/
 /*}*/
 
+body{
+  margin: unset;
+}
 /**,*/
 /**:before,*/
 /**:after {*/
