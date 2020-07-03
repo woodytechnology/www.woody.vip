@@ -10,14 +10,14 @@
         </div>
       </el-col>
       <el-col :span="12" :xs="24" class="show_item" >
-        <img width="100%" src="~/assets/function.png" alt="Woody Box">
+        <img width="100%" src="~/assets/function.webp" alt="Woody Box">
       </el-col>
 
     </el-row>
     <el-row class="show">
 
       <el-col :span="12" :xs="24" class="show_item" >
-        <img width="100%" src="~/assets/cnc.jpg" alt="Woody Box">
+        <img width="100%" src="~/assets/cnc.webp" alt="Woody Box">
       </el-col>
       <el-col :span="12" :xs="24" class="show_item">
         <div  class="case-text">
@@ -36,7 +36,7 @@
         </div>
       </el-col>
       <el-col :span="12" :xs="24" class="show_item" >
-        <img width="100%" src="~/assets/feibiao.png" alt="Woody Box">
+        <img width="100%" src="~/assets/feibiao.webp" alt="Woody Box">
       </el-col>
 
     </el-row>

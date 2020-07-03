@@ -8,7 +8,7 @@
           </div>
           <el-row>
             <el-col :span="12" :xs="24">
-              <img width="200px" src="~/assets/ciyun.png" alt="Woody Box">
+              <img width="200px" src="~/assets/ciyun.webp" alt="Woody Box">
             </el-col>
             <el-col :span="12" :xs="24" class="intro-text">
               <p>专业级的网络安全</p>
@@ -48,7 +48,7 @@
           </div>
           <el-row>
             <el-col :span="12" :xs="24" class="intro-image">
-              <img height="200px" src="~/assets/dianluban.png" alt="Woody Box">
+              <img height="200px" src="~/assets/dianluban.webp" alt="Woody Box">
             </el-col>
             <el-col :span="12" :xs="24" class="intro-text">
               <p>老旧机床物联网改造</p>
@@ -66,7 +66,7 @@
           </div>
           <el-row>
             <el-col :span="12" :xs="24" class="intro-image">
-              <img height="180px" src="~/assets/iot.png" alt="Woody Box">
+              <img height="180px" src="~/assets/iot.webp" alt="Woody Box">
             </el-col>
             <el-col :span="12" :xs="24" class="intro-text">
               <p>上百种设备适配</p>

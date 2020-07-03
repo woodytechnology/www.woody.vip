@@ -4,6 +4,7 @@
       <NavBar></NavBar>
     </Part>
     <client-only>
+      <div class="vue-particles" :style="{'height': 600 +'px'}"></div>
       <vue-particles color="#dedede"  class="vue-particles" :style="{'height': 600 +'px'}" >
       </vue-particles>
     </client-only>

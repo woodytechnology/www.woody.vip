@@ -81,24 +81,24 @@
         },
         {
           name:'KND',
-          img: require("~/assets/protocols/knd.png"),
+          img: require("~/assets/protocols/knd.webp"),
           name_zh:'凯恩帝'
         },
         {
           name:'GSK',
-          img: require("~/assets/protocols/gsk.png"),
+          img: require("~/assets/protocols/gsk.webp"),
           name_zh:'广数'
         },
         {
           name:'Syntec',
-          img: require("~/assets/protocols/syntec.png"),
+          img: require("~/assets/protocols/syntec.webp"),
           name_zh:'新代'
         }
       ],
       PLC:[
         {
           name:'Modbus',
-          img: require("~/assets/protocols/modbus.png"),
+          img: require("~/assets/protocols/modbus.webp"),
           name_zh:'Modbus'
         },
         {
@@ -123,7 +123,7 @@
         },
         {
           name:'delta',
-          img: require("~/assets/protocols/delta.png"),
+          img: require("~/assets/protocols/delta.webp"),
           name_zh:'台达'
         },
 

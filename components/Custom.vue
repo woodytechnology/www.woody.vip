@@ -3,7 +3,7 @@
     <vue-seamless-scroll :data="customs" :class-option="classOption5" class="warp2">
       <ul class="ul-item clearfix">
         <li class="li-item" v-for="(item, index) in customs" :key="index">
-          <a :href="item.url" target="_blank" style="display:flex "><img style="max-width: 250px;max-height: 150px" :src="item.img" :alt="item.title"></a>
+          <a rel="noopener"  :href="item.url" target="_blank" style="display:flex "><img style="max-width: 250px;max-height: 150px" :src="item.img" :alt="item.title"></a>
         </li>
       </ul>
     </vue-seamless-scroll>
@@ -26,32 +26,32 @@
         customs: [
           {
             'title': '徐工汉云',
-            'img': require('~/assets/customs/hanyun.png'),
+            'img': require('~/assets/customs/hanyun.webp'),
             'url': 'http://www.hanyunplat.com'
           },
           {
             'title': '航天云网',
-            'img': require('~/assets/customs/casi.png'),
+            'img': require('~/assets/customs/casi.webp'),
             'url':'https://www.casicloud.com/'
           },
           {
             'title': '零点自动化',
-            'img': require('~/assets/customs/odot.png'),
+            'img': require('~/assets/customs/odot.webp'),
             'url':'https://www.odot.cn/'
           },
           {
             'title': '浙大台州研究院',
-            'img': require('~/assets/customs/zjdxtzyjy.jpeg'),
+            'img': require('~/assets/customs/zjdxtzyjy.webp'),
             'url':'https://rizt.zju.edu.cn/'
           },
           {
             'title': '旋几工业',
-            'img': require('~/assets/customs/xuanji.png'),
+            'img': require('~/assets/customs/xuanji.webp'),
             'url':'http://www.xuanji-auto.com/'
           },
           {
             'title': '双鸿智能',
-            'img': require('~/assets/customs/shuanghong.png'),
+            'img': require('~/assets/customs/shuanghong.webp'),
             'url':'http://www.shhsmart.com/'
           }
         ]

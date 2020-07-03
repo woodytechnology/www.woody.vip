@@ -11,7 +11,7 @@
 
       </el-col>
       <el-col :span="12" :xs="24" class="show_item" >
-        <img class="show-img"  height="60%" src="~/assets/weapp.png" alt="Woody Box">
+        <img  loading="lazy" class="show-img"  height="60%" src="~/assets/weapp.webp" alt="Woody Box">
       </el-col>
     </el-row>
 
