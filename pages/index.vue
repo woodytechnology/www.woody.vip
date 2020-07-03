@@ -67,6 +67,14 @@ export default {
       meta: [
         { hid: 'company', name: 'company', content: '宁夏巫迪科技有限公司' },
         { hid: 'description', name: 'description', content: 'CNC/PLC数据采集,专注于工业物联网,致力于开拓工业新基建' }
+      ],
+      noscript: [
+        { innerHTML: 'Body No Scripts', body: true }
+      ],
+      script: [
+        { src: '/head.js' },
+        { src: '/body.js', body: true },
+        { src: '/defer.js', defer: '' }
       ]
     }
   }
