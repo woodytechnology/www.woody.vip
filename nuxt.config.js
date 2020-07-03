@@ -1,5 +1,5 @@
 import * as MODES from "nuxt-purgecss";
-
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 export default {
   mode: 'universal',
   /*
@@ -25,6 +25,9 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
+  configureWebpack: {
+    plugins: [new BundleAnalyzerPlugin()]
+  },
   plugins: [
     '@/plugins/element-ui',
     '@/plugins/echarts',
