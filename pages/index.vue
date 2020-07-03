@@ -33,7 +33,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import NavBar from '@/components/NavBar.vue';
 import Images from '@/components/Images.vue';
 import Intro from '@/components/Intro.vue';
@@ -42,13 +42,9 @@ import Map from '@/components/Map.vue';
 import Case from '@/components/Case.vue';
 import Part from '@/components/part.vue';
 import Footer from '@/components/footer.vue';
-import Protocol from "@/components/Protocol.vue";
-
-
-
-import { Component, Vue, Watch } from 'vue-property-decorator'
-@Component({
-  components: {
+import Protocol from "@/components/Protocol";
+export default {
+  components:{
     NavBar,
     Images,
     Intro,
@@ -58,12 +54,13 @@ import { Component, Vue, Watch } from 'vue-property-decorator'
     Part,
     Footer,
     Protocol
-  }
-})
-export default class extends Vue {
-  geoCoordMap = []
-  custom = []
-  
+  },
+  data() {
+    return {
+      geoCoordMap: [],
+      custom: []
+    }
+  },
   head(){
     return {
       title: '巫迪科技',
