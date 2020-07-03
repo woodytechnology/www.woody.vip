@@ -9,15 +9,7 @@ export default {
     host: '0.0.0.0' // default: localhost
   },
   head: {
-    title: process.env.npm_package_name || '',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    title: '巫迪科技|工业数据采集'
   },
   /*
   ** Customize the progress-bar color
@@ -50,8 +42,23 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    'nuxt-seo'
   ],
+  seo: {
+    lang: 'zh-cn',
+    language: '简体中文',
+    image:'https://woody.vip/woody.png',
+    name: '宁夏巫迪科技有限公司',
+    company: 'company',
+    description: 'CNC/PLC数据采集,专注于工业物联网,致力于开拓工业新基建',
+    url: 'https://woody.vip',
+    openGraph:{
+      type:true,
+      images: 'https://woody.vip/woody.png',
+      url: 'https://woody.vip',
+    }
+  },
   /*
   ** Build configuration
   */

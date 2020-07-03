@@ -33,52 +33,37 @@
   </div>
 </template>
 
-<script>
-import NavBar from '@/components/NavBar.vue';
-import Images from '@/components/Images.vue';
-import Intro from '@/components/Intro.vue';
-import Custom from '@/components/Custom.vue';
-import Map from '@/components/Map.vue';
-import Case from '@/components/Case.vue';
-import Part from '@/components/part.vue';
-import Footer from '@/components/footer.vue';
-import Protocol from "@/components/Protocol";
-export default {
-  components:{
-    NavBar,
-    Images,
-    Intro,
-    Custom,
-    Map,
-    Case,
-    Part,
-    Footer,
-    Protocol
-  },
-  data() {
-    return {
-      geoCoordMap: [],
-      custom: []
+<script lang="ts">
+  import NavBar from '@/components/NavBar.vue';
+  import Images from '@/components/Images.vue';
+  import Intro from '@/components/Intro.vue';
+  import Custom from '@/components/Custom.vue';
+  import Map from '@/components/Map.vue';
+  import Case from '@/components/Case.vue';
+  import Part from '@/components/part.vue';
+  import Footer from '@/components/footer.vue';
+  import Protocol from "@/components/Protocol.vue";
+
+
+
+  import { Component, Vue, Watch } from 'vue-property-decorator'
+  @Component({
+    components: {
+      NavBar,
+      Images,
+      Intro,
+      Custom,
+      Map,
+      Case,
+      Part,
+      Footer,
+      Protocol
     }
-  },
-  head(){
-    return {
-      title: '巫迪科技',
-      meta: [
-        { hid: 'company', name: 'company', content: '宁夏巫迪科技有限公司' },
-        { hid: 'description', name: 'description', content: 'CNC/PLC数据采集,专注于工业物联网,致力于开拓工业新基建' }
-      ],
-      noscript: [
-        { innerHTML: 'Body No Scripts', body: true }
-      ],
-      script: [
-        { src: '/head.js' },
-        { src: '/body.js', body: true },
-        { src: '/defer.js', defer: '' }
-      ]
-    }
+  })
+  export default class extends Vue {
+    geoCoordMap = []
+    custom = []
   }
-}
 </script>
 
 <style>
