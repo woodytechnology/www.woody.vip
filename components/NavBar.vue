@@ -91,6 +91,9 @@
   .el-menu--horizontal .el-menu .el-menu-item, .el-menu--horizontal .el-menu .el-submenu__title {
     background-color: #04091c;
   }
+  .el-menu--horizontal>.el-submenu.is-active .el-submenu__title{
+    border-bottom:unset;
+  }
   a{text-decoration: none;color:white}
   a:visited{text-decoration: none;color:white}
   a:hover {text-decoration: none;color:white}
