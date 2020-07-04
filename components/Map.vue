@@ -23,7 +23,7 @@
     },
     methods: {
       async fetchSomething() {
-        const res = await this.$axios.$get('https://custom.woody.vip/api/v1/tools/custom_map')
+        const res = await this.$axios.$get('https://www.woody.vip/custom/api/v1/tools/custom_map')
         this.geoCoordMap=res.data.map
         console.log(this.geoCoordMap)
         this.custom=res.data.data
