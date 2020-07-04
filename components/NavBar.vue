@@ -16,8 +16,12 @@
       <el-menu-item index="app">应用场景</el-menu-item>
       <el-menu-item index="map">客户分布</el-menu-item>
       <el-menu-item index="footer">联系我们</el-menu-item>
-      <el-menu-item index="doc" style="float: right"><a rel="noopener" href="https://doc.iotbox.woody.vip" target="_blank"><i class="el-icon-link"></i>网关文档</a></el-menu-item>
-    </el-menu>
+      <el-submenu index="more" style="float: right">
+        <template slot="title">更多</template>
+        <el-menu-item index="doc" ><a rel="noopener" href="https://www.woody.vip/boxdoc" target="_blank"><i class="el-icon-link"></i>巫迪网关文档</a></el-menu-item>
+        <el-menu-item index="custom" ><a rel="noopener" href="https://www.woody.vip/custom" target="_blank"><i class="el-icon-link"></i>巫迪网关管理平台</a></el-menu-item>
+        <el-menu-item index="manual" ><a rel="noopener" href="https://www.woody.vip/fanuc" target="_blank"><i class="el-icon-link"></i>常用机床手册</a></el-menu-item>
+      </el-submenu>    </el-menu>
   </div>
 </template>
 
@@ -75,8 +79,20 @@
   .el-menu--horizontal>.el-menu-item{
     border-bottom:unset;
   }
-  a{text-decoration: none;}
-  a:visited{text-decoration: none;}
-  a:hover {text-decoration: none;}
-  a:active{text-decoration:none;}
+  .el-menu--horizontal>.el-submenu .el-submenu__title:hover{
+    background-color: #04091c;
+  }
+  .el-menu--horizontal {
+    background-color: #04091c;
+  }
+  .el-submenu__title{
+    font-size:18px;
+  }
+  .el-menu--horizontal .el-menu .el-menu-item, .el-menu--horizontal .el-menu .el-submenu__title {
+    background-color: #04091c;
+  }
+  a{text-decoration: none;color:white}
+  a:visited{text-decoration: none;color:white}
+  a:hover {text-decoration: none;color:white}
+  a:active{text-decoration:none;color:white}
 </style>
