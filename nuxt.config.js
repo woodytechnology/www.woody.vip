@@ -74,10 +74,11 @@ export default {
     image:'https://woody.vip/woody.png',
     name: '宁夏巫迪科技有限公司',
     company: 'company',
-    description: '专注于工业物联网,致力于开拓工业新基建,有完整的工业信息化建设方案,旗下采集网关支持发那科(Fanuc),西门子(Sismens),' +
+    description: '专注于工业物联网,致力于开拓工业新基建,有完整的工业信息化建设方案,旗下采集网关(MDC)支持发那科(Fanuc),西门子(Sismens),' +
       '三菱(Mitsubishi),哈斯(Haas),西铁城(Citizen),兄弟(Brother),海德汉(Heidenhain),马扎克(Mazak),德马吉(DMG),森精机(Mori),' +
       '法格(Fagor),凯恩帝,广数,新代(Syntec),Modbus,欧姆龙(Omron),施耐德(Schneider),台达(Delta),库卡(Kuka),ABB等CNC/PLC/Robot' +
       '的数据采集与远程控制',
+    keywords: '工业物联网,机床采集,PLC采集,MDC,DNC',
     url: 'https://www.woody.vip',
     openGraph:{
       type:true,
