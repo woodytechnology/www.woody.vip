@@ -16,11 +16,11 @@
       <el-menu-item index="app">应用场景</el-menu-item>
       <el-menu-item index="map">客户分布</el-menu-item>
       <el-menu-item index="footer">联系我们</el-menu-item>
+      <a class="el-menu-item" style="color:white;    background-color:#04091c" rel="noopener" href="https://www.woody.vip/posts" target="_blank"><i class="el-icon-link"></i>文档手册</a>
       <el-submenu index="more" style="float: right">
         <template slot="title">更多</template>
         <el-menu-item index="doc" ><a rel="noopener" href="https://www.woody.vip/boxdoc" target="_blank"><i class="el-icon-link"></i>巫迪网关文档</a></el-menu-item>
         <el-menu-item index="custom" ><a rel="noopener" href="https://www.woody.vip/custom" target="_blank"><i class="el-icon-link"></i>巫迪网关管理平台</a></el-menu-item>
-        <el-menu-item index="manual" ><a rel="noopener" href="https://www.woody.vip/fanuc" target="_blank"><i class="el-icon-link"></i>常用机床手册</a></el-menu-item>
       </el-submenu>    </el-menu>
   </div>
 </template>
@@ -94,7 +94,7 @@
   .el-menu--horizontal>.el-submenu.is-active .el-submenu__title{
     border-bottom:unset;
   }
-  a{text-decoration: none;color:white}
+  a{text-decoration: none;color:white;}
   a:visited{text-decoration: none;color:white}
   a:hover {text-decoration: none;color:white}
   a:active{text-decoration:none;color:white}
