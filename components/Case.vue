@@ -15,11 +15,17 @@
 
     </el-row>
     <el-row class="show">
-
+      <el-col :span="12" :xs="24" class="show_item hidden-sm-and-up">
+        <div  class="case-text">
+          <h1>设备远程维护</h1>
+          <h3>可靠的虚拟专用网络(VPN)</h3>
+          <p>解决企业外部项目的维护困难,省去出差驻场的调试维护,通过VPN网络完成大部分程序调试更新,设备维护工作.定制开发的VPN服务端,实现用户隔离,提高设备安全性,防止非授权访问</p>
+        </div>
+      </el-col>
       <el-col :span="12" :xs="24" class="show_item" >
         <img width="100%" src="~/assets/cnc.webp" alt="Woody Box">
       </el-col>
-      <el-col :span="12" :xs="24" class="show_item">
+      <el-col :span="12" :xs="24" class="show_item hidden-xs-only">
         <div  class="case-text">
           <h1>设备远程维护</h1>
           <h3>可靠的虚拟专用网络(VPN)</h3>
@@ -59,8 +65,20 @@
   .show {
     margin-bottom: 40px;
   }
-  .case-text {
-    line-height: 50px;
-    width: 60%
+
+
+  @media screen and (max-width: 750px){
+    .case-text {
+      line-height: 50px;
+      width: 90%
+    }
   }
+
+  @media screen and (min-width: 750px){
+    .case-text {
+      line-height: 50px;
+      width: 60%
+    }
+  }
+
 </style>

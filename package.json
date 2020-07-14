@@ -9,7 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "nuxt generate && ssh wuyun.pro 'sudo rm -rf /srv/index3' && scp -r dist wuyun.pro:/srv/index3"
+    "deploy": "nuxt generate &&tar czf index.tgz dist && scp -r index.tgz wuyun.pro:/tmp&& ssh wuyun.pro 'sudo rm -rf /srv/index3;sudo mkdir -p /srv/index3;sudo tar zxf /tmp/index.tgz --strip-components 1  -C /srv/index3'"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",

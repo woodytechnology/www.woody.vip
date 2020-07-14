@@ -43,7 +43,7 @@
             show:true,
             text: '客户分布',
             x:'center',
-            y: 100,
+            y: 50,
             textAlign: null,
             textStyle: {
               fontSize: 30,

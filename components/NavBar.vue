@@ -11,17 +11,27 @@
       <el-menu-item index="top">
         <img height="80%" src="~/assets/woody.webp" alt="logo">
       </el-menu-item>
-      <el-menu-item index="intro">公司简介</el-menu-item>
-      <el-menu-item index="protocol">支持协议</el-menu-item>
-      <el-menu-item index="app">应用场景</el-menu-item>
-      <el-menu-item index="map">客户分布</el-menu-item>
-      <el-menu-item index="footer">联系我们</el-menu-item>
-      <a class="el-menu-item" style="color:white;    background-color:#04091c" rel="noopener" href="https://www.woody.vip/posts" target="_blank"><i class="el-icon-link"></i>文档手册</a>
+      <el-menu-item class="hidden-md-and-down" index="intro">公司简介</el-menu-item >
+      <el-menu-item class="hidden-md-and-down" index="protocol">支持协议</el-menu-item>
+      <el-menu-item class="hidden-md-and-down" index="app">应用场景</el-menu-item>
+      <el-menu-item class="hidden-md-and-down" index="map">客户分布</el-menu-item>
+      <el-menu-item class="hidden-md-and-down" index="footer">联系我们</el-menu-item>
+      <a class="el-menu-item hidden-md-and-down" style="color:white; background-color:#04091c" rel="noopener" href="https://www.woody.vip/posts" target="_blank"><i class="el-icon-link"></i>文档手册</a>
       <el-submenu index="more" style="float: right">
-        <template slot="title">更多</template>
+        <template slot="title">
+          <span class="hidden-lg-and-up">导航</span>
+          <span class="hidden-md-and-down">更多</span>
+        </template>
+        <el-menu-item class="hidden-lg-and-up" index="intro">公司简介</el-menu-item>
+        <el-menu-item class="hidden-lg-and-up" index="protocol">支持协议</el-menu-item>
+        <el-menu-item class="hidden-lg-and-up" index="app">应用场景</el-menu-item>
+        <el-menu-item class="hidden-lg-and-up" index="map">客户分布</el-menu-item>
+        <el-menu-item class="hidden-lg-and-up" index="footer">联系我们</el-menu-item>
+        <el-menu-item class="hidden-lg-and-up" index="doc" ><a rel="noopener" href="https://www.woody.vip/posts" target="_blank"><i class="el-icon-link"></i>文档手册</a></el-menu-item>
         <el-menu-item index="doc" ><a rel="noopener" href="https://www.woody.vip/boxdoc" target="_blank"><i class="el-icon-link"></i>巫迪网关文档</a></el-menu-item>
         <el-menu-item index="custom" ><a rel="noopener" href="https://www.woody.vip/custom" target="_blank"><i class="el-icon-link"></i>巫迪网关管理平台</a></el-menu-item>
-      </el-submenu>    </el-menu>
+      </el-submenu>
+    </el-menu>
   </div>
 </template>
 

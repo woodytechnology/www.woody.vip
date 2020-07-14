@@ -20,9 +20,10 @@
     <Part id="app" style="background: white">
       <Case></Case>
     </Part>
-    <Part style="background: #404a59">
-      <Map style="height: 800px;"></Map>
+    <Part style="background: #404a59;">
+      <Map :style="{height:mapHeight+'px'}"></Map>
     </Part>
+
     <Part id="custom" style="background: white;height: 200px">
       <Custom></Custom>
     </Part>
@@ -62,8 +63,12 @@
     }
   })
   export default class extends Vue {
-    geoCoordMap = []
-    custom = []
+    private mapHeight=800;
+    public mounted(){
+      if(document.body.clientWidth<800){
+        this.mapHeight = document.body.clientWidth;
+      }
+    }
   }
 </script>
 
