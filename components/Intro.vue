@@ -136,6 +136,9 @@
 </script>
 
 <style  scoped>
+  .box-card{
+    margin: 10px;
+  }
   .intro-image{
     display: flex;
     justify-content: center;
