@@ -122,11 +122,15 @@
           name_zh:'施耐德'
         },
         {
-          name:'delta',
+          name:'Delta',
           img: require("~/assets/protocols/delta.webp"),
           name_zh:'台达'
         },
-
+        {
+          name:'Allen Bradley',
+          img: require("~/assets/protocols/allen_bradley.svg"),
+          name_zh:'罗克韦尔'
+        },
       ],
       Robot:[
         {
