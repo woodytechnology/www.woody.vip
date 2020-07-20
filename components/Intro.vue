@@ -48,7 +48,7 @@
           </div>
           <el-row>
             <el-col :span="12" class="intro-image">
-              <img height="200px" src="~/assets/dianluban.webp" alt="Woody Box">
+              <img height="180px" src="~/assets/dianluban.webp" alt="Woody Box">
             </el-col>
             <el-col :span="12" class="intro-text">
               <p>老旧机床物联网改造</p>
