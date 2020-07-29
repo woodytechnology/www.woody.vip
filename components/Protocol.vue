@@ -102,6 +102,11 @@
           name_zh:'Modbus'
         },
         {
+          name:'OPC Unified Architecture',
+          img: require("~/assets/protocols/opcua.svg"),
+          name_zh:'OPC UA'
+        },
+        {
           name:'Siemens',
           img: require("~/assets/protocols/siemens.svg"),
           name_zh:'西门子'
