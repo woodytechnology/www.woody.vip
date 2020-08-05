@@ -35,6 +35,7 @@ export default {
     '@/plugins/element-ui',
     '@/plugins/echarts',
     '@/plugins/v-clock',
+    { src: '~plugins/baidu.js', ssr: false },
     { src: '@/plugins/v-fullscreen',mode: 'client' }, // only on client side
     { src:'@/plugins/v-particles',mode: 'client' }, // only on client side
 
