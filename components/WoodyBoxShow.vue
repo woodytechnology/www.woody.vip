@@ -4,11 +4,11 @@
     <el-row style="width:100%;height: 100%">
       <el-col :span="12" class="show_item">
         <div  class="show_item_text">
-          <h1>巫迪工业网关</h1>
-          <h3>工业新基建的重要组成部分</h3>
+          <h1>{{$t('box_show.title')}}</h1>
+          <h3>{{ $t('box_show.line1') }}</h3>
           <div style="line-height:20px">
-            <p>兼容90%以上的CNC设备,上百种PLC协议</p>
-            <p>可远程维护控制,边缘计算</p>
+            <p>{{ $t('box_show.line2') }}</p>
+            <p>{{ $t('box_show.line3') }}</p>
           </div>
         </div>
       </el-col>

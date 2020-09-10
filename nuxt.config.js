@@ -1,5 +1,6 @@
 import * as MODES from "nuxt-purgecss";
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+import lang from "./lang";
 export default {
   mode: 'universal',
   /*
@@ -8,12 +9,6 @@ export default {
   server: {
     port: 3000, // default: 3000
     host: '0.0.0.0' // default: localhost
-  },
-  head: {
-    title: '巫迪科技|工业数据采集',
-    meta: [
-      { name: 'viewport', content: ' initial-scale=1' }
-    ]
   },
   /*
   ** Customize the progress-bar color
@@ -52,9 +47,10 @@ export default {
   */
   modules: [
     '@nuxtjs/axios',
-    'nuxt-seo',
-    'nuxt-purgecss'
+    'nuxt-purgecss',
+    'nuxt-i18n',
   ],
+  i18n: lang,
   purgeCSS: {
     mode: MODES.webpack,
     enabled: ({ isDev, isClient }) => (!isDev && isClient), // or `false` when in dev/debug mode
@@ -72,24 +68,6 @@ export default {
         extensions: ['html', 'vue', 'js']
       }
     ]
-  },
-  seo: {
-    lang: 'zh-cn',
-    language: '简体中文',
-    image:'https://woody.vip/woody.png',
-    name: '宁夏巫迪科技有限公司',
-    viewport:'width=device-width, initial-scale=1.0',
-    company: '宁夏巫迪科技有限公司',
-    description: '专注于工业物联网,致力于开拓工业新基建,有完整的工业信息化建设方案,旗下采集网关(MDC)可采集各种主流机床(CNC)/PLC/机器人(ROBOT),包括发那科(Fanuc),西门子(Sismens),' +
-      '三菱(Mitsubishi),哈斯(Haas),西铁城(Citizen),兄弟(Brother),海德汉(Heidenhain),马扎克(Mazak),德马吉(DMG),森精机(Mori),' +
-      '法格(Fagor),凯恩帝,广数,新代(Syntec),Modbus,欧姆龙(Omron),施耐德(Schneider),台达(Delta),库卡(Kuka),ABB等',
-    keywords: '工业物联网,机床采集,PLC采集,MDC,DNC',
-    url: 'https://www.woody.vip',
-    openGraph:{
-      type:true,
-      images: 'https://www.woody.vip/woody.png',
-      url: 'https://www.woody.vip',
-    }
   },
   /*
   ** Build configuration

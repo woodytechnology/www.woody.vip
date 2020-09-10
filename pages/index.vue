@@ -31,45 +31,75 @@
     <Part id="footer" style="background: #04091c; padding-top:50px;color: white ">
       <Footer></Footer>
     </Part>
-
   </div>
 </template>
 
-<script lang="ts">
-  import NavBar from '@/components/NavBar.vue';
-  import Images from '@/components/Images.vue';
-  import Intro from '@/components/Intro.vue';
-  import Custom from '@/components/Custom.vue';
-  import Map from '@/components/Map.vue';
-  import Case from '@/components/Case.vue';
-  import Part from '@/components/part.vue';
-  import Footer from '@/components/footer.vue';
-  import Protocol from "@/components/Protocol.vue";
+<script>
+import NavBar from "@/components/NavBar";
+import Images from "@/components/Images";
+import Intro from "@/components/Intro";
+import Custom from "@/components/Custom";
+import Map from "@/components/Map";
+import Case from "@/components/Case";
+import Part from "@/components/part";
+import Footer from "@/components/footer";
+import Protocol from "@/components/Protocol";
 
-
-
-  import { Component, Vue, Watch } from 'vue-property-decorator'
-  @Component({
-    components: {
-      NavBar,
-      Images,
-      Intro,
-      Custom,
-      Map,
-      Case,
-      Part,
-      Footer,
-      Protocol
+export default {
+  components:{
+    NavBar,
+    Images,
+    Intro,
+    Custom,
+    Map,
+    Case,
+    Part,
+    Footer,
+    Protocol
+  },
+  data() {
+    return {
+      mapHeight:800
     }
-  })
-  export default class extends Vue {
-    private mapHeight=800;
-    public mounted(){
-      if(document.body.clientWidth<800){
-        this.mapHeight = document.body.clientWidth;
-      }
+  },
+  mounted(){
+    if(document.body.clientWidth<800){
+      this.mapHeight = document.body.clientWidth;
+    }
+  },
+  // head: {
+  //   title: 'Home page',
+  //   meta: [
+  //     {hid: 'description', name: 'description', content: 'Home page description'},
+  //     {hid: 'company', name: 'company', content: 'Home ssssssss description'},
+  //     {hid: 'test', name: 'test', content: 'Homsssn'}
+  //
+  //   ],
+  // }
+  head () {
+    var url='https://www.woody.vip'
+    if(this.$i18n.locale!==this.$i18n.defaultLocale){
+      url=url+'/'+this.$i18n.locale
+    }
+    return{
+      title: this.$t('title'),
+      meta: [
+        {hid: 'company', name: 'company', content: this.$t('woody_full')},
+        {hid: 'name', name: 'name', content: this.$t('woody_full')},
+        {hid: 'description', name: 'description', content: this.$t('description')},
+        {hid: 'image', name: 'image', content: 'https://www.woody.vip/woody.png'},
+        {hid: 'url', name: 'url', content: url },
+        {hid: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1.0'},
+        {hid: 'og:company', name: 'og:company', content: this.$t('woody_full')},
+        {hid: 'og:site_name', name: 'og:site_name', content: this.$t('woody_full')},
+        {hid: 'og:title', name: 'og:title', content: this.$t('title')},
+        {hid: 'og:description', name: 'og:description', content: this.$t('description')},
+        {hid: 'og:image', name: 'og:image', content: 'https://www.woody.vip/woody.png'},
+        {hid: 'og:url', name: 'og:url', content: url},
+      ],
     }
   }
+}
 </script>
 
 <style>

@@ -25,7 +25,7 @@
         },
         customs: [
           {
-            'title': '徐工汉云',
+            'title': this.$t('custom.hanyun'),
             'img': require('~/assets/customs/hanyun.webp'),
             'url': 'http://www.hanyunplat.com'
           },

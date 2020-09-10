@@ -4,9 +4,9 @@
     <el-row class="show" style="width:100%;height: 100%">
       <el-col :span="12" class="show_item">
         <div  class="show_item_text">
-          <h1>巫迪工业APP</h1>
-          <h3>将您的工厂搬到手机上</h3>
-          <p>支持Android,iOS等主流手机平台</p>
+          <h1>{{$t('app_show.title')}}</h1>
+          <h3>{{ $t('app_show.line1') }}</h3>
+          <p>{{ $t('app_show.line2') }}</p>
         </div>
       </el-col>
       <el-col :span="12" class="show_item">

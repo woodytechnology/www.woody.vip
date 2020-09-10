@@ -4,9 +4,9 @@
     <el-row class="show" style="width:100%;height: 100%">
       <el-col :span="12" class="show_item">
         <div  class="show_item_text">
-          <h1>巫迪工业云平台</h1>
-          <h3>实现工厂数字化</h3>
-          <p>预测性维护设备,提高设备利用率</p>
+          <h1>{{$t('cloud_show.title')}}</h1>
+          <h3>{{ $t('cloud_show.line1') }}</h3>
+          <p>{{ $t('cloud_show.line2') }}</p>
         </div>
 
       </el-col>

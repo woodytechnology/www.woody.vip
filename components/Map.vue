@@ -57,7 +57,7 @@
           animationEasingUpdate: 'cubicInOut',
           title:  {
             show:true,
-            text: '客户分布',
+            text: this.$t('custom.title'),
             x:'center',
             y: 50,
             textAlign: null,
