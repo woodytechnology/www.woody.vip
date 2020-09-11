@@ -67,15 +67,6 @@ export default {
       this.mapHeight = document.body.clientWidth;
     }
   },
-  // head: {
-  //   title: 'Home page',
-  //   meta: [
-  //     {hid: 'description', name: 'description', content: 'Home page description'},
-  //     {hid: 'company', name: 'company', content: 'Home ssssssss description'},
-  //     {hid: 'test', name: 'test', content: 'Homsssn'}
-  //
-  //   ],
-  // }
   head () {
     var url='https://www.woody.vip'
     if(this.$i18n.locale!==this.$i18n.defaultLocale){
@@ -84,6 +75,7 @@ export default {
     return{
       title: this.$t('title'),
       meta: [
+        { charset: 'utf-8' },
         {hid: 'company', name: 'company', content: this.$t('woody_full')},
         {hid: 'name', name: 'name', content: this.$t('woody_full')},
         {hid: 'description', name: 'description', content: this.$t('description')},
